@@ -16,3 +16,25 @@ Chain-of-thought prompting involves asking the language model to break down a co
 
 ### 5.) Building a Useful LLM Application Using Prompt Engineering
 Here's an example of building a simple question-answering application using prompt engineering with the GPT-3 model:
+
+# sample.py
+import math
+
+def calculate_area(radius):
+    """
+    Calculate the area of a circle given its radius.
+    
+    Args:
+        radius (float): The radius of the circle.
+        
+    Returns:
+        float: The area of the circle.
+    """
+    area = math.pi * radius ** 2
+    return area
+
+# Example usage
+radius = 5.0
+circle_area = calculate_area(radius)
+print(f"The area of a circle with radius {radius} is {circle_area:.2f}")
+
